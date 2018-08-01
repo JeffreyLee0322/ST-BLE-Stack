@@ -1,0 +1,28 @@
+--cpu Cortex-M0
+".\demo\system_stm32f0xx.o"
+".\demo\main.o"
+".\demo\stm32f0xx_it.o"
+".\demo\cms_spi.o"
+".\demo\cms_24g.o"
+".\demo\cms_24g2.o"
+".\demo\stm32f0_discovery.o"
+".\demo\stm32f0xx_syscfg.o"
+".\demo\stm32f0xx_misc.o"
+".\demo\stm32f0xx_adc.o"
+".\demo\stm32f0xx_dac.o"
+".\demo\stm32f0xx_dma.o"
+".\demo\stm32f0xx_exti.o"
+".\demo\stm32f0xx_flash.o"
+".\demo\stm32f0xx_gpio.o"
+".\demo\stm32f0xx_i2c.o"
+".\demo\stm32f0xx_rcc.o"
+".\demo\stm32f0xx_spi.o"
+".\demo\stm32f0xx_tim.o"
+".\demo\startup_stm32f0xx.o"
+".\demo\hal_ble.o"
+".\demo\hal_spi.o"
+".\demo\sys_delay.o"
+--library_type=microlib --strict --scatter ".\Demo\Demo.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Demo\Demo.map" -o .\Demo\Demo.axf

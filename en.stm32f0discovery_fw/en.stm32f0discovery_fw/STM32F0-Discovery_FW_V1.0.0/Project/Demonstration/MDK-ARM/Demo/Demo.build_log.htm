@@ -1,0 +1,87 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+F:\Project_dev\WL_BLE\en.stm32f0discovery_fw\en.stm32f0discovery_fw\STM32F0-Discovery_FW_V1.0.0\Project\Demonstration\MDK-ARM\STM32F0-Discovery_Demo.uvproj
+Project File Date:  08/02/2018
+
+<h2>Output:</h2>
+Build target 'Demo'
+compiling sys_delay.c...
+linking...
+Program Size: Code=1428 RO-data=224 RW-data=100 ZI-data=1060  
+".\Demo\Demo.axf" - 0 Error(s), 0 Warning(s).
+  uint32_t calc_crc = 0;
+..\main.c: 1 warning, 0 errors
+compiling stm32f0xx_it.c...
+compiling cms_spi.c...
+..\cms_spi.c(424): warning:  #177-D: function "SPI_Delay" was declared but never referenced
+  static void SPI_Delay(int time)
+..\cms_spi.c: 1 warning, 0 errors
+compiling cms_24g.c...
+..\cms_24g.c(128): warning:  #174-D: expression has no effect
+                __NOP;
+..\cms_24g.c(325): warning:  #177-D: variable "i" was declared but never referenced
+        u8 i = 0;
+..\cms_24g.c(287): warning:  #177-D: function "WL1600_IDLE_Mode" was declared but never referenced
+  static void WL1600_IDLE_Mode(void)
+..\cms_24g.c(292): warning:  #177-D: function "WL1600_Sleep" was declared but never referenced
+  static void WL1600_Sleep(void)
+..\cms_24g.c: 4 warnings, 0 errors
+compiling cms_24g2.c...
+..\cms_24g2.c(41): warning:  #174-D: expression has no effect
+                __NOP;
+..\cms_24g2.c(211): warning:  #177-D: variable "i" was declared but never referenced
+        u8 i = 0;
+..\cms_24g2.c(12): warning:  #177-D: variable "len" was declared but never referenced
+  static  u8 len,checksum;
+..\cms_24g2.c(12): warning:  #177-D: variable "checksum" was declared but never referenced
+  static  u8 len,checksum;
+..\cms_24g2.c(167): warning:  #177-D: function "WL1600_Clean_Rx_Fifo_2" was declared but never referenced
+  static void WL1600_Clean_Rx_Fifo_2(void)
+..\cms_24g2.c(172): warning:  #177-D: function "WL1600_Read_Fifo_Data_2" was declared but never referenced
+  static u8 WL1600_Read_Fifo_Data_2(void)
+..\cms_24g2.c(194): warning:  #177-D: function "WL1600_Pkt_Flag_2" was declared but never referenced
+  static u8 WL1600_Pkt_Flag_2(void)                        
+..\cms_24g2.c(199): warning:  #177-D: function "WL1600_Clean_Pkg_Flag_2" was declared but never referenced
+  static void WL1600_Clean_Pkg_Flag_2(void)
+..\cms_24g2.c(204): warning:  #177-D: function "WL1600_Crc_Error_Flag_2" was declared but never referenced
+  static u8 WL1600_Crc_Error_Flag_2(void)
+..\cms_24g2.c: 9 warnings, 0 errors
+compiling stm32f0_discovery.c...
+compiling stm32f0xx_syscfg.c...
+compiling stm32f0xx_misc.c...
+compiling stm32f0xx_adc.c...
+compiling stm32f0xx_dac.c...
+compiling stm32f0xx_dma.c...
+compiling stm32f0xx_exti.c...
+compiling stm32f0xx_flash.c...
+compiling stm32f0xx_gpio.c...
+compiling stm32f0xx_i2c.c...
+compiling stm32f0xx_rcc.c...
+compiling stm32f0xx_spi.c...
+compiling stm32f0xx_tim.c...
+assembling startup_stm32f0xx.s...
+compiling hal_ble.c...
+..\BLE_Stack\src\hal_ble.c(124): warning:  #223-D: function "delay_us" declared implicitly
+      delay_us(20);
+..\BLE_Stack\src\hal_ble.c(187): warning:  #223-D: function "delay_us" declared implicitly
+      delay_us(5);
+..\BLE_Stack\src\hal_ble.c(209): warning:  #223-D: function "delay_us" declared implicitly
+      delay_us(5);
+..\BLE_Stack\src\hal_ble.c(79): warning:  #177-D: function "wl1600_check_regs" was declared but never referenced
+  u8 wl1600_check_regs(void)
+..\BLE_Stack\src\hal_ble.c: 4 warnings, 0 errors
+compiling hal_spi.c...
+..\BLE_Stack\src\hal_spi.c(253): warning:  #177-D: function "BLE_SPI_Delay" was declared but never referenced
+  static void BLE_SPI_Delay(int time)
+..\BLE_Stack\src\hal_spi.c: 1 warning, 0 errors
+compiling sys_delay.c...
+..\BLE_Stack\src\sys_delay.c(9): error:  #20: identifier "fac_us" is undefined
+        SysTick->LOAD=nus*fac_us;                                       //时间加载                       
+..\BLE_Stack\src\sys_delay.c(28): error:  #20: identifier "fac_ms" is undefined
+        SysTick->LOAD=(u32)nms*fac_ms;                          //时间加载(SysTick->LOAD为24bit)
+..\BLE_Stack\src\sys_delay.c: 0 warnings, 2 errors
+".\Demo\Demo.axf" - 2 Error(s), 20 Warning(s).
+Target not created

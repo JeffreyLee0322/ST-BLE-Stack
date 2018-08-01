@@ -1,0 +1,15 @@
+"F:\CC3200\iar\arm\bin\armproc.dll" 
+
+"F:\CC3200\iar\arm\bin\armstlink2.dll" 
+
+"E:\CMS\STM32_discovery\en.stm32f0discovery_fw\STM32F0-Discovery_FW_V1.0.0\Project\Peripheral_Examples\IO_Toggle\EWARM\IO_Toggle\Exe\IO_Toggle.out" 
+
+--plugin "F:\CC3200\iar\arm\bin\armbat.dll" 
+
+--device_macro "F:\CC3200\iar\arm\config\debugger\ST\STM32F05xxx_06xxx.dmac" 
+
+--flash_loader "F:\CC3200\iar\arm\config\flashloader\ST\FlashSTM32F051x8.board" 
+
+
+
+
